@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    overflow: hidden;
+}
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.popup-btn {
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+}
+.popup-btn:hover {
+    background-color: #2e2e2e;
+    color: white;
+}
+.popup {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: #2e2e2e;
+}
+.top-animation {
+    top: 50%;
+    transition: top 0.5s ease;
+}
+.bottom-animation {
+    top: 150%;
+    transition: top 0.5s ease;
+}
+.popup .cross {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.popup .cross:hover {
+    color: black;
+}
+
+.popup-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.popup-item > * {
+    flex: 1;
+    padding: 3rem;
+}
+.popup-item > div:first-of-type {
+    background-image: url(images/section-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.popup-item h2 {
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.popup-item input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid rgb(22, 22, 22);
+    padding: 0.5rem;
+    margin-bottom: 0.8rem;
+    width: 100%;
+}
+.popup-item input:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.popup-item input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(153, 153, 153);
+}
+.popup-item .btn {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+.popup-item .btn:hover {
+    background-color: white;
+    color: black;
+}
